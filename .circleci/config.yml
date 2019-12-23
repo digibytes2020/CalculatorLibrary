@@ -5,10 +5,10 @@ jobs:
     docker:
       - image: circleci/python:3.7
 
-    working_directory: ~/CalculatorLibrary
+    working_directory: ~/CalculatorLibrary/.circleci/
 
     steps:
-      # Step 1: obtain repo from GitHub
+      #Step 1: https://github.com/digibytes2020/CalculatorLibrary.git
       - checkout
       # Step 2: create virtual env and install dependencies
       - run:
